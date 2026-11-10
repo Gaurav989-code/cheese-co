@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap");
+
+@import "tailwindcss";
+
+/* ================= GLOBAL ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #06120f;
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #06120f;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ================= FONTS ================= */
+
+.font-display {
+  font-family: "Playfair Display", serif;
+}
+
+.font-hand {
+  font-family: "Caveat", cursive;
+}
+
+.font-menu {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* ================= LENIS SMOOTH SCROLL ================= */
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Prevent embedded map from catching scroll
+   while Lenis is actively scrolling */
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* ================= TEXT SELECTION ================= */
+
+::selection {
+  background: #d7f72a;
+  color: #06120f;
+}
+
+/* ================= LINKS ================= */
+
+a {
+  text-decoration: none;
+}
+
+/* ================= IMAGES ================= */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ================= WEBKIT SCROLLBAR ================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #06120f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d7f72a;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bfe600;
+}
+
+/* ================= FIREFOX SCROLLBAR ================= */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d7f72a #06120f;
+}
+
+/* ================= RESPONSIVE SAFETY ================= */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
